@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+    <link rel="icon" type="image/x-icon" href="/faviconlogo.ico">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="light">
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="index.html">
+                <img class="navlogo" src="images/nav-officelogo.png" alt="">
+            </a>
+            <div class="float-right" style="cursor: pointer;">
+                <a id="light"><img class="darkmode-img dark-mode" src="images/lamp-charge-svgrepo-com.png" alt=""></a>
+                <a id="dark"><img class="darkmode-img light-mode" src="images/lamp-slash-svgrepo-com.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item mb-4 mb-md-0 mt-4 mt-md-0">
+                        <a class="nav-link active mx-2" aria-current="page" href="index.html">Αρχική</a>
+                    </li>
+                    <li class="nav-item mb-4 mb-md-0">
+                        <a class="nav-link active mx-2" href="service.html">Υπηρεσίες</a>
+                    </li>
+                    <li class="nav-item mb-4 mb-md-0">
+                        <a class="nav-link active mx-2" href="about.html">Η ομάδα</a>
+                    </li>
+                    <li class="nav-item mb-4 mb-md-0">
+                        <a class="nav-link active mx-2" href="contact.html">Επικοινωνία</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header -->
+
+    <header>
+        <div class="head-main py-5">
+            <h1 class="display-4">Η ομάδα μας</h1>
+        </div>
+    </header>
+
+
+
+
+    <!-- About -->
+
+
+    <div class="row" style="padding: 0;">
+        <div class="about-img col-md-6 d-flex align-items-center justify-content-center overflow-hidden"
+            style="padding: 0;">
+            <img src="images/mother-with-kid.jpg" class="rounded img-fluid max-100vh" style="width: 70%; height: 70%;">
+        </div>
+        <div class="about-text col-md-6 p-5 mt-2 d-flex flex-column justify-content-center align-items-start">
+            <h1 class="my-4">Λίγα λόγια <span class="fw-bold" style="color:orangered">για εμάς</span></h1>
+            <h5 class="pe-lg-5 text-start custom-font-size"">Ο οικογενειακός ιατρός αναλαμβάνει τη θεραπεία, την πρόληψη και τη διάγνωση ασθενειών σε ολόκληρη την οικογένεια. Είναι εξειδικευμένος στη φροντίδα της υγείας των μελών της, προσαρμόζοντας την περίθαλψη σε κάθε άτομο ανάλογα με τις ανάγκες του. Αποτελεί την πρώτη επαφή των ασθενών με το σύστημα υγείας και λειτουργεί ως παρακολουθητής της υγείας της οικογένειας σε όλα τα στάδια της ζωής τους.</h5>
+          </div>
+        </div>
+
+
+
+        <!-- Swiper -->
+
+        <section class=" office-img" style="margin-bottom: 120px; margin-top: 100px;">
+                <div class="text-center">
+                    <h1>Το ιατρείο μας</h1>
+                </div>
+                <div class=" swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/office/office-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/office/office-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/office/office-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/office/office-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/office/office-5.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                </section>
+
+                <style>
+                    .swiper {
+                        width: 100%;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+
+                    .swiper-slide {
+                        background-position: center;
+                        background-size: cover;
+                        width: 400px;
+                        height: 200px;
+                    }
+
+                    .swiper-slide img {
+                        display: block;
+                        width: 100%;
+                    }
+                </style>
+
+
+
+
+
+                <!-- Docs -->
+
+                <div>
+                    <h1 class=" text-center my-5"><span class="fw-bold" style="color: var(--orange-color);">Οι
+                            γιατροί</span>
+                        του
+                        ιατρείου μας</h1>
+                </div>
+
+                <section class="providers mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="female-provider mb-5">
+                                <img class="rounded" src="/images/office/female-doc.jpg" alt="">
+                                <div class="providers-text ps-2 ps-md-5 pe-2">
+                                    <h3 class="my-4">Ευαγγελία Τσίγκα</h3>
+                                    <p class="mb-0 custom-font-size-providers">Γεννήθηκα την 1η Απριλίου του 1979 στα
+                                        Τρίκαλα Θεσσαλίας. Φοίτησα στην Ιατρική Σχολή του Αριστοτελείου Πανεπιστημίου
+                                        Θεσσαλονίκης (1998-2004) όπου εισήχθηκα μετά από πανελλήνιες εξετάσεις. Κατέχω
+                                        Μεταπτυχιακό Δίπλωμα εξειδίκευσης στην Ιατρική Ερευνητική μεθοδολογία με την
+                                        κατεύθυνση της Κοινωνικής Ιατρικής (MSc) και Διδακτορικό Δίπλωμα της Ιατρικής
+                                        Σχολής του αριστοτέλειου πανεπιστημίου Θεσσαλονικης (PhD). Η διδακτορική μου
+                                        διατριβή αφορά τη λήψη ιατρικών αποφάσεων στα πλαίσια της Πρωτοβάθμιας φροντίδας
+                                        υγείας. Έχω εργαστεί σε ευρωπαϊκά ερευνητικά προγράμματα στην Ιατρική σχολή του
+                                        ΑΠΘ και διδάσκω σε φοιτητές προπτυχιακού και μεταπτυχιακού επιπέδου. Ξεχωριστή
+                                        θέση στα ακαδημαϊκά και ευρύτερα επαγγελματικά μου ενδιαφέροντα κατέχει η σχέση
+                                        γιατρού-ασθενή, με την έννοια της συνεργασίας και της από κοινού λήψης
+                                        αποφάσεων. Πιστεύω στη δύναμη της ενημέρωσης και ενδυνάμωσης του ασθενή ως
+                                        βασικού προγνωστικό παράγοντα στην πορεία της θεραπείας της νόσου. Από το 2014
+                                        διατηρώ ιδιωτικό ιατρείο επί της Αρχαιολογικού Μουσείου στην Θεσσαλονίκη.</p>
+                                    <p><i style="padding-right: 10px; color: var(--orange-color);"
+                                            class="fa-solid fa-envelope mt-5"></i>evelyntsiga@gmail.com</a> <br><br>
+                                        <i style="padding-right: 10px; color: var(--orange-color);"
+                                            class="fa-solid fa-phone"></i>+30 2314 006 545
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="mx-auto my-5" style="width:3%">
+
+
+                            <div class="male-provider">
+                                <img class="rounded" src="images/docfemale.jpg" alt="">
+                                <div class="providers-text ps-2 ps-md-5 pe-2">
+                                    <h3 class="my-4">Αγραφιώτης Γεώργιος</h3>
+                                    <p class="mb-0 custom-font-size-providers">
+                                        Ολοκλήρωσα τις σπουδές μου στην Ιατρική το 2001. Στη συνέχεια, εκτέλεσα τα
+                                        καθήκοντά του αγροτικού ιατρού στο Κέντρο Υγείας Αριδαίας.
+                                        Το 2005 προχώρησα σε εκπαίδευση στο
+                                        Τμήμα Επειγόντων Περιστατικών, της Χειρουργικής και Παθολογικής Κλινικής του
+                                        Γενικού Νοσοκομείου Έδεσσας. Το 2007 άρχισα την εκπαίδευσή μου ως Γενικός
+                                        Οικογενειακός Ιατρός στο Γενικό Νοσοκομείο Παπανικολάου στη Θεσσαλονίκης.
+
+                                        Επιπλέον, εκπαιδεύτηκα στην επειγοντολογία από το Εθνικό Κέντρο Αμεσης Βοήθειας.
+                                        Ολοκλήρωσα το Μετεκπαιδευτικό πρόγραμμα στην Επείγουσα Προνοσοκομειακή Ιατρική
+                                        (Ε.Π.Ι), καθώς και σε προγράμματα BLS, ATLS, ALS και εξειδικευμένα σεμινάρια
+                                        Αθλητικών Επειγόντων Περιστατικών (AED).
+
+                                        Για δύο χρόνια εργάστηκα ως υπεύθυνος ιατρός στην Παθολογική Κλινική 12
+                                        Απόστολοι και στο Δημόσιο Ιδρυμα Άγιος Παντελεήμονας.
+
+                                        Διορίστηκα ως μόνιμος ιατρός στο Περιφερειακό Ιατρείο Σταυρού - Κέντρο Υγείας
+                                        Νέας Μαδύτου όπου μετά από εφτά χρόνια άριστης υπηρεσίας αποχώρησα με το βαθμό
+                                        του Επιμελητή Α’. Παράλληλα εξειδικεύθηκα στο Γενικό Νοσοκομείο Παπαγεωργίου
+                                        στην Αρτηριακή Υπέρταση.
+
+                                        Σήμερα, διατηρώ ιατρείο επί της Αρχαιολογικού Μουσείου 33 στη Θεσσαλονίκη.</p>
+                                    <p><i style="padding-right: 10px; color: var(--orange-color);"
+                                            class="fa-solid fa-envelope mt-5"></i>agrafiotis.iatros@yahoo.gr</a>
+                                        <br><br>
+                                        <i style="padding-right: 10px; color: var(--orange-color);"
+                                            class="fa-solid fa-phone"></i>+30 2314 006 545
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Footer -->
+
+                <footer class="footer mt-5">
+                    <div class="container pt-5">
+                        <div class="row">
+                            <div class="footer-contact col-md-6 text-center order-2 order-md-1">
+                                <p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>Αρχαιολογικού
+                                    μουσείου 33
+                                </p>
+                                <p>
+                                    <i style="padding-right: 10px;"
+                                        class="fa-solid fa-envelope"></i>evelyntsiga@gmail.com<br><span
+                                        style="margin-left: 32px;">agrafiotis.iatros@yahoo.gr</span>
+                                </p>
+                                <p>
+                                    <i style="padding-right: 10px;" class="fa-solid fa-phone"></i>+30 2314 006 545
+                                </p>
+                                <img class="w-50" src="images/logo-white.png" alt="">
+                            </div>
+                            <div class="footer-text col-md-6 order-1 order-md-2">
+                                <form action="form.php" method="POST">
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="floatingInput"
+                                            placeholder="Ονοματεπώνυμο" name="name" required>
+                                        <label class="form-inner" for="floatingInput">Ονοματεπώνυμο</label>
+                                    </div>
+                                    <div class="form-floating ">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="email@example.com" name="email" required>
+                                        <label class="form-inner" for="floatingInput">e-mail</label>
+                                    </div>
+                                    <div class="">
+                                        <label class="form-inner" for="exampleFormControlTextarea1"
+                                            class="form-label"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Μήνυμα" name="message" required></textarea>
+                                    </div>
+                                    <div class=" mt-0">
+                                        <label style="color:var(--light-grey)" for="recipient"
+                                            class="form-label ms-2"></label>
+                                        <select style="color:var(--light-grey)" class="form-select" id="recipient"
+                                            name="recipient">
+                                            <option value="info@scubacorfu.com">Ευαγγελία Τσίγκα</option>
+                                            <option value="agrafiotis.iatros@yahoo.gr">Αγραφιώτης Γεώργιος</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn3 mt-3 w-100" type="submit">Αποστολή</button>
+
+                                </form>
+                            </div>
+                            <div class="col-12 text-center mt-md-5 mt-3 order-3">
+                                <!-- <p>Copyright © 2023 <span class="family-office"></span></p> -->
+
+                                <p class="web-dev mt-0">Developed by <a href="https://netorbyte.com"><span
+                                            class="web-dev-name">netorbyte </span></a><span class="divider">|</span> <a
+                                        href="mailto:dev@netorbyte.com" class="web-dev-email">dev@netorbyte.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+                    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+                    crossorigin="anonymous"></script>
+
+
+                <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+
+header {
+    width: 99vw;
+    height: 70vh;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(../images/sunset2.jpg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    margin-bottom: 100px;
+  }
+  
+  header h1 {
+    color: var(--light-color);
+  }
+
+
+  hr {
+    border: 12px dotted;
+    border-bottom: none;
+    border-color: var(--orange-color);
+    opacity: 0.9;
+    border-spacing: 100px;
+  }
+  
+  
+
+
+/* section p{
+    max-width: 600px;
+} */
+
+
+.img-left{
+    text-align: center;
+}
+.img-right{
+    text-align: center;
+}
+
+.img-left p,
+.img-right p {
+   text-align: left;
+}
+
+
+@media (min-width:992px){
+    .services .container{
+        max-width: 70%;
+    }
+}
+
+@media (min-width:767px){
+    .img-left img{
+        float: left;
+    }
+    
+    .img-right img{
+        float: right;
+    }
+
+    section img{
+        width: 200px;
+    }
+    .img-left,
+    .img-right{
+        margin-top: 40px;
+    }
+    section p{
+        margin-left: 20px;
+    }
+
+    
+}
+
+@media (max-width:768px){
+    section img{
+        width: 160px;
+        margin:0 auto;
+    }
+}

@@ -1,0 +1,227 @@
+:root {
+    --main-color: #E04D01;
+    --dark-color: #181D31;
+    --grey-color: #333;
+    --light-grey: #434242;
+    --light-color: #f8f8f8;
+    --white-color: #fff;
+    --violet-color: #2D033B;
+    --orange-color: orangered;
+    --blue-color: #003865;
+    --blue-light-color: #1682fc;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 1000ms ease-in-out, color 1500ms ease-in-out;
+    overflow-x: hidden !important;
+}
+
+body p,
+body h5 {
+    line-height: 27px;
+}
+
+/* body h5{
+    color: var(--light-grey);
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.row {
+    margin-right: 0;
+}
+
+
+/* Dark Mode */
+
+
+.light {
+    --bg: var(--light-color);
+    --text: var(--grey-color)
+}
+
+.dark {
+    --bg: var(--dark-color);
+    --text: var(--light-color);
+}
+
+.darkmode-img {
+    width: 32px;
+    position: absolute;
+    top: 22px;
+    right: 514px;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .darkmode-img {
+        right: 120px;
+    }
+}
+
+.dark-mode {
+    display: none;
+}
+
+.light-mode {
+    display: block;
+}
+
+body.dark .light-mode {
+    display: none;
+}
+
+body.dark .dark-mode {
+    display: block;
+}
+
+/* Animations */
+
+.slideElement {
+    transform: translateY(10%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.slideElement.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* Navbar */
+
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-size: 1.2rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navlogo {
+    width: 50px;
+}
+
+@media (max-width:767px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+        border-radius: 25px;
+    }
+}
+
+nav a:hover {
+    color: var(--orange-color) !important;
+}
+
+nav a:active {
+    color: orange !important;
+}
+
+
+/* Button */
+
+.btn {
+    background-color: var(--orange-color);
+    color: var(--light-color);
+}
+
+.btn2 {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+
+.btn3 {
+    background-color: transparent;
+    color: var(--light-color);
+    border: solid;
+    border-color: var(--light-color);
+}
+
+.btn:hover {
+    background-color: orange;
+    color: #f8f8f8;
+}
+
+.btn2:hover {
+    background-color: var(--blue-color) !important;
+    color: var(--light-color) !important;
+}
+
+.btn3:hover {
+    background-color: var(--main-color) !important;
+    color: var(--light-color);
+}
+
+.btn:active {
+    border-color: var(--orange-color) !important;
+}
+
+.btn2:active {
+    background-color: var(--dark-color) !important;
+}
+
+.btn3:active {
+    background-color: transparent !important;
+    border: solid;
+    border-color: var(--light-color) !important;
+}
+
+
+/* Footer */
+
+.form-inner {
+    color: #555 !important;
+}
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/nature2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    color: var(--light-color) !important;
+
+}
+
+.footer a {
+    color: var(--light-color) !important;
+}
+
+.footer-contact p {
+    margin: 30px auto;
+    font-size: 1.2rem;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #333);
+}
+
+@media (max-width:767px) {
+    .footer-contact img {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-top: 30px;
+    }
+}

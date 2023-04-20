@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+	<link rel="icon" type="image/x-icon" href="/faviconlogo.ico">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/utilities.css">
+	<title>Document</title>
+</head>
+
+<body class="light">
+
+
+	<!-- Navbar -->
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+		<div class="container-fluid px-5">
+			<a class="navbar-brand" href="index.html">
+				<img class="navlogo" src="images/nav-officelogo.png" alt="">
+			</a>
+			<div class="float-right" style="cursor: pointer;">
+				<a id="light"><img class="darkmode-img dark-mode" src="images/lamp-charge-svgrepo-com.png" alt=""></a>
+				<a id="dark"><img class="darkmode-img light-mode" src="images/lamp-slash-svgrepo-com.png" alt=""></a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav ">
+					<li class="nav-item mb-4 mb-md-0 mt-4 mt-md-0">
+						<a class="nav-link active mx-2" aria-current="page" href="index.html">Αρχική</a>
+					</li>
+					<li class="nav-item mb-4 mb-md-0">
+						<a class="nav-link active mx-2" href="service.html">Υπηρεσίες</a>
+					</li>
+					<li class="nav-item mb-4 mb-md-0">
+						<a class="nav-link active mx-2" href="about.html">Η ομάδα</a>
+					</li>
+					<li class="nav-item mb-4 mb-md-0">
+						<a class="nav-link active mx-2" href="contact.html">Επικοινωνία</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<!-- Header -->
+
+	<header>
+		<div class="head-main py-5">
+			<h1 class="display-4">Επικοινωνία</h1>
+		</div>
+	</header>
+
+
+	<!-- Form -->
+
+	<section id="form" class="form-main">
+		<div class="container py-5">
+			<div class="row">
+				<div class="form col-12 col-md-7">
+					<div class="p-5 contact-form">
+
+						<h2 class="text-center" style="color:var(--dark-color)">Επικοινωνήστε μαζί μας</h2>
+						<form action="form.php" method="POST">
+							<div class=" mt-4">
+								<label style="color:var(--light-grey)" for="recipient" class="form-label ms-2">Διαλέξτε
+									τον γιατρό σας</label>
+								<select style="color:var(--light-grey)" class="form-select" id="recipient"
+									name="recipient">
+									<option value="evelyntsiga@gmail.com">Dr. Ευαγγελία Τσίγκα</option>
+									<option value="agrafiotis.iatros@yahoo.gr">Dr. Αγραφιώτης Γεώργιος</option>
+								</select>
+							</div>
+							<div class="mt-4 form-floating mb-3">
+								<input type="name" class="form-control" id="floatingInput" placeholder="Ονοματεπώνυμο"
+									name="name" required>
+								<label class="form-inner" for="floatingInput">Ονοματεπώνυμο</label>
+							</div>
+							<div class=" mt-4 form-floating">
+								<input type="email" class="form-control" id="floatingInput"
+									placeholder="email@example.com" name="email" required>
+								<label class="form-inner" for="floatingInput">e-mail</label>
+							</div>
+
+							<div class=" mt-3">
+								<label class="form-inner" for="exampleFormControlTextarea1" class="form-label"></label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+									placeholder="Μήνυμα" name="message" required></textarea>
+							</div>
+							<button class="btn mt-5 w-100" type="submit">Αποστολή</button>
+						</form>
+
+					</div>
+
+				</div>
+				<div class="info-map col-12 col-md-5 mx-0 px-0 ">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12114.538950860057!2d22.940739366915473!3d40.61588186705322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838e110d9a177%3A0xb2755fb79c6904fe!2zzqTOo86ZzpPOms6RIM6VzqXOkc6TzpPOlc6bzpnOkQ!5e0!3m2!1sel!2sgr!4v1678618885483!5m2!1sel!2sgr"
+						width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Dividers -->
+
+	<div class="section-divider">
+		<div class="container-fluid">
+			<div class="evelin text-center py-4 slideElement">
+				<h2>Dr. Ευαγγελία Τσίγκα</h2>
+				<div class="row mt-md-5">
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<a href="tel:+3023140065454"><img src="svg/contact-classic-telephone-svgrepo-com.svg"
+									alt=""></a>
+							<p class="mt-3"><a href="tel:+3023140065454">+30 2314 006 545</a></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<a href="mailto:evelyntsiga@gmail.com"><img
+									src="svg/contact-papperplane-communication-svgrepo-com.svg" alt=""></a>
+							<p class="mt-3"><a href="mailto:evelyntsiga@gmail.com">evelyntsiga@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<img src="svg/contact-pin-location-svgrepo-com.svg" alt="" style="cursor:pointer">
+							<p class="mt-3" style="cursor:pointer">Αρχαιολογικού μουσείου 33</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-divider mt-2">
+		<div class="container-fluid">
+			<div class="text-center py-4 slideElement">
+				<h2>Dr. Αγραφιώτης Γεώργιος</h2>
+				<div class="row mt-md-5">
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<a href="tel:+3023140065454"><img src="svg/contact-classic-telephone-svgrepo-com.svg"
+									alt=""></a>
+							<p class="mt-3"><a href="tel:+3023140065454">+30 2314 006 545</a></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<a href="mailto:agrafiotis.iatros@yahoo.gr"><img
+									src="svg/contact-papperplane-communication-svgrepo-com.svg" alt=""></a>
+							<p class="mt-3"><a href="mailto:agrafiotis.iatros@yahoo.gr">agrafiotis.iatros@yahoo.gr</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mt-5 mt-md-2">
+						<div class="text-center">
+							<img src="svg/contact-pin-location-svgrepo-com.svg" alt="" style="cursor:pointer">
+							<p class="mt-3" style="cursor:pointer">Αρχαιολογικού μουσείου 33</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FAQ -->
+
+	<section class="faq my-5">
+		<div class="row slideElement" style="padding: 0;">
+			<div class="col-md-6 d-flex align-items-center justify-content-center overflow-hidden" style="padding: 0;">
+				<img src="images/nature.jpg" class="img-fluid max-100vh rounded" style="width: 90%; height: 90%;">
+			</div>
+			<div class="head-text col-md-6 p-5 mt-1">
+				<h1 class="mt-0 text-center">Συχνές <span class="fw-bold"
+						style="color:var(--orange-color)">Ερωτήσεις</span></h1>
+				<div class="accordion mt-5 " id="accordionExample">
+					<div class="accordion-item ">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Πως κλείνω ραντεβού;
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Μπορείτε να κλέισετε ραντεβού τηλεφωνικά ή στέλνοντας μας ένα μήνυμα συμπληρώνοντας την
+								φόρμα επικοινωνίας. Μπορείτε επίσης να επισκεφτείτε την σελίδα gov.gr στην οποία γίνεται
+								να προγραμματίσετε το ραντεβού σας με τον οικογενειακό σας ιατρό.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Mπορώ να επισκεφτώ το ιατρείο χωρίς ραντεβού;
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Για την καλύτερη εξυπηρέτηση σας η επίσκεψη γίνεται μόνο κατόπιν επικοινωνίας με τη
+								γραμματεία. Συνήθως υπάρχει δυνατότητα για ραντεβού την ίδια ημέρα.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Μπορώ να έρθω στο ιατρείο το Σαββατοκύριακο;
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Το ιατρείο μας λειτουργεί Δευτέρα με Παρασκευή από τις 10:30 εώς τις 14:30 και 18:30 εώς
+								21:30.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Υπάρχει δυνατότητα εξ' αποστάσεως επίσκεψης;
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Ναι, αν πρόκειται για παρακολούθηση γνωστού περιστατικου ή για απλή ιατρική συμβουλή.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								Υπάρχει δυνατότητα επίσκεψης κατ΄οίκον;
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Ναι, το ιατρεία προσφέρει την συγκεκριμένη υπηρεσία για ηλικιωμένους και για άτομα που
+								δεν είναι εύκολη ή εφικτή η μετακίνησή τους.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSix">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+								Eίναι ευκολη η πρόσβαση στο ιατρείο;
+							</button>
+						</h2>
+						<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Το ιατρείο είναι ισόγειο οπότε δινεται η δυνατότητα της ευκολης πρόσβασης σε άτομα με
+								κινητικές ή άλλες δυκολίες.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<!-- Footer -->
+
+	<footer class="footer mt-5">
+		<div class="container pt-5">
+			<div class="row">
+				<div class="footer-contact col-md-6 text-center order-2 order-md-1">
+					<p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>Αρχαιολογικού
+						μουσείου 33
+					</p>
+					<p>
+						<i style="padding-right: 10px;" class="fa-solid fa-envelope"></i>evelyntsiga@gmail.com<br><span
+							style="margin-left: 32px;">agrafiotis.iatros@yahoo.gr</span>
+					</p>
+					<p>
+						<i style="padding-right: 10px;" class="fa-solid fa-phone"></i>+30 2314 006 545
+					</p>
+					<img class="w-50" src="images/logo-white.png" alt="">
+				</div>
+				<div class="footer-text col-md-6 order-1 order-md-2">
+					<form action="form.php" method="POST">
+						<div class="form-floating mb-3">
+							<input type="name" class="form-control" id="floatingInput" placeholder="Ονοματεπώνυμο"
+								name="name" required>
+							<label class="form-inner" for="floatingInput">Ονοματεπώνυμο</label>
+						</div>
+						<div class="form-floating ">
+							<input type="email" class="form-control" id="floatingInput" placeholder="email@example.com"
+								name="email" required>
+							<label class="form-inner" for="floatingInput">e-mail</label>
+						</div>
+						<div class="">
+							<label class="form-inner" for="exampleFormControlTextarea1" class="form-label"></label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+								placeholder="Μήνυμα" name="message" required></textarea>
+						</div>
+						<div class=" mt-0">
+							<label style="color:var(--light-grey)" for="recipient" class="form-label ms-2"></label>
+							<select style="color:var(--light-grey)" class="form-select" id="recipient" name="recipient">
+								<option value="info@scubacorfu.com">Ευαγγελία Τσίγκα</option>
+								<option value="agrafiotis.iatros@yahoo.gr">Αγραφιώτης Γεώργιος</option>
+							</select>
+						</div>
+						<button class="btn btn3 mt-3 w-100" type="submit">Αποστολή</button>
+
+					</form>
+				</div>
+				<div class="col-12 text-center mt-md-5 mt-3 order-3">
+					<!-- <p>Copyright © 2023 <span class="family-office"></span></p> -->
+
+					<p class="web-dev mt-0">Developed by <a href="https://netorbyte.com"><span
+								class="web-dev-name">netorbyte </span></a><span class="divider">|</span> <a
+							href="mailto:dev@netorbyte.com" class="web-dev-email">dev@netorbyte.com</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+		integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+		crossorigin="anonymous"></script>
+
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
