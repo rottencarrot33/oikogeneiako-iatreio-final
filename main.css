@@ -1,0 +1,512 @@
+/* Header */
+
+.max-100vh {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+@media (max-width:767px) {
+    .max-100vh {
+        max-height: 70vh;
+        object-position: center bottom;
+    }
+}
+
+header h3,
+h1,
+p,
+.btn {
+    margin-top: 60px;
+}
+
+
+
+/* .head-text {
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(images/canva-redoffice.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+} */
+
+
+
+/* Cards */
+
+#cards-head img {
+    width: 110px;
+}
+
+@media (min-width:576px) and (max-width:1199px) {
+
+    .card1,
+    .card4 {
+        background-color: var(--light-color);
+        color: var(--grey-color);
+        transition: background-color 0.8s;
+    }
+
+    .card2,
+    .card3 {
+        background-color: var(--main-color);
+        transition: background-color 0.8s;
+        color: var(--light-color);
+    }
+
+    /* .card1:hover,
+    .card4:hover {
+        background-color: #d3d3d3;
+    }
+
+    .card2:hover,
+    .card3:hover {
+        background-color: #c4581d;
+    } */
+}
+
+@media (max-width:575px) {
+
+    .card1,
+    .card3 {
+        background-color: var(--light-color);
+        color: var(--grey-color);
+        transition: background-color 0.8s;
+    }
+
+    .card2,
+    .card4 {
+        background-color: var(--main-color);
+        transition: background-color 0.8s;
+        color: var(--light-color);
+    }
+
+    /* .card1:hover,
+    .card3:hover {
+        background-color: #d3d3d3;
+    }
+
+    .card2:hover,
+    .card4:hover {
+        background-color: #c4581d;
+    } */
+}
+
+@media (min-width:1200px) {
+
+    .card1,
+    .card3 {
+        background-color: var(--light-color);
+        color: var(--grey-color);
+        transition: background-color 0.8s;
+    }
+
+    .card2,
+    .card4 {
+        background-color: var(--main-color);
+        transition: background-color 0.8s;
+        color: var(--light-color);
+    }
+
+    /* .card1:hover,
+    .card3:hover {
+        background-color: #d3d3d3;
+    }
+
+    .card2:hover,
+    .card4:hover {
+        background-color: #c4581d;
+    } */
+}
+
+
+
+
+/* About */
+
+.about-img img {
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+/* infosection */
+
+.infosection {
+    background: url(../svg/Simple\ Shiny.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    color: var(--light-color);
+}
+
+.faicon {
+    color: var(--orange-color);
+}
+
+.icon-background {
+    color: var(--light-color);
+    z-index: -10;
+}
+
+.infosection img {
+    width: 100px;
+    z-index: 10;
+}
+
+/* imgsection */
+.mass-img {
+    height: 400px;
+}
+
+@media (max-width:500px) {
+    .mass-img {
+        height: 300px;
+    }
+}
+
+@media (min-width:767px) {
+    .mass-img {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width:1200px) {
+    .img-section-text p {
+        max-width: 480px;
+    }
+}
+
+.mass-img img {
+
+    width: 300px;
+}
+
+.img-section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Cards */
+
+@media(min-width:1200px) {
+    #cards {
+        margin-top: 120px;
+    }
+}
+
+#cards {
+    margin-top: 110px;
+}
+
+#cards img {
+    width: 100px;
+    margin: auto;
+}
+
+.card {
+    background-color: #e8edf0;
+    color: var(--grey-color);
+    transition: .8s;
+}
+
+.card:hover {
+    transform: translateY(-5%) !important;
+}
+
+/* Intouch */
+
+.intouch {
+    background: url(../svg/Simple\ Shiny.svg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 60px auto;
+    padding: 30px auto;
+    color: var(--light-color);
+}
+
+.intouch-text {
+    margin: auto;
+}
+
+/* Doctors */
+
+.team-img {
+    overflow: hidden;
+}
+
+@media (min-width:767px) {
+    .team-img img {
+        transition: transform 0.85s;
+
+    }
+
+    /* .team-img:hover img {
+        transform: scale(1.1);
+        cursor: pointer;
+    } */
+}
+
+
+
+@media (max-width:576px) {
+    .team-img p {
+        text-align: center;
+    }
+
+    .team-img img {
+        height: 470px;
+        object-fit: cover;
+    }
+}
+
+
+
+@media (min-width:567px) and (max-width:767px) {
+    .doctors-text {
+        margin-bottom: 40px;
+    }
+
+    .team-img p {
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+
+    .team-img img {
+        height: 351px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .doctors-text {
+        margin-bottom: 40px;
+    }
+
+    .team-img p {
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+
+    .team-img img {
+        height: 486px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .evelyn-info {
+        margin-top: 50px !important;
+    }
+
+    .george-mail {
+        padding-right: 2px;
+    }
+
+    .team-img img {
+        height: 310.5px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:1200px) {
+    .doctors-text {
+        padding-right: 100px;
+        padding-left: 50px;
+    }
+
+    .team-img img {
+        height: 378px;
+        object-fit: cover;
+    }
+}
+
+/* faq */
+
+.accordion-button {
+    background-color: var(--main-color) !important;
+    color: var(--light-color) !important;
+}
+
+.accordion-body {
+    background-color: var(--light-color);
+}
+
+
+/* review card */
+
+.review-card {
+    z-index: 100;
+    opacity: 1 !important;
+}
+
+.review-card p {
+    font-size: 11px;
+}
+
+.review-card h5 {
+    font-size: 1rem;
+}
+
+.review-card h6 {
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.review-text {
+    height: 120px;
+    justify-content: center;
+    display: table;
+}
+
+.review-text h6 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.review-img img {
+    width: 110px;
+}
+
+.review-letter-img img {
+    width: 40px;
+}
+
+.review-google-logo img {
+    width: 30px;
+}
+
+
+.swiper-container,
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.swiper-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+@media (max-width:767px) {
+    .swiper-container {
+        width: 95%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+    .swiper-container {
+        width: 97%;
+        height: 100%;
+    }
+}
+
+@media (min-width:1200px) {
+    .swiper-container {
+        width: 98%;
+        height: 100%;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next {
+    background-image: url(https://i.ibb.co/wMN9jD9/arrow-circle-right-svgrepo-com.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.swiper-button-prev {
+    background-image: url(https://i.ibb.co/t2hqw8R/arrow-circle-left-svgrepo-com.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+
+/* testimonials */
+
+.testimonials {
+    background-image: url(../svg/Simple\ Shiny.svg);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--main-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimonials .card {
+    background-color: #fff !important;
+}
+
+
+
+/* .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  } */

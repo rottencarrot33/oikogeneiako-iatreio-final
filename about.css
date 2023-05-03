@@ -1,0 +1,248 @@
+header {
+  width: 99vw;
+  height: 70vh;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(../images/sunset2.jpg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+}
+
+header h1 {
+  color: var(--light-color);
+}
+
+hr {
+  border: 12px dotted;
+  border-bottom: none;
+  border-color: var(--orange-color);
+  opacity: 0.9;
+  border-spacing: 100px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Main Area */
+
+@media (max-width: 767px) {
+  .about-img img {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-img img {
+    max-width: 400px;
+  }
+}
+
+.about-img img {
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 992px) {
+  .custom-font-size {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 767px) {
+  .custom-font-size-providers {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+}
+
+
+/* Providers */
+
+@media (min-width: 768px) {
+
+  .female-provider img,
+  .male-provider img {
+    min-width: 250px !important;
+    height: 375px !important;
+    object-fit: cover;
+    float: left;
+  }
+}
+
+@media (min-width: 577px) and (max-width:767px) {
+
+  .female-provider img,
+  .male-provider img {
+    width: 60%;
+    height: 380px !important;
+    object-fit: cover;
+    margin-left: 70px;
+    display: block;
+  }
+
+  .male-provider img {
+    object-position: center top;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .female-provider img,
+  .male-provider img {
+    width: 80%;
+    height: 400px !important;
+    object-fit: cover;
+    margin-left: 30px;
+    display: block;
+  }
+
+  .male-provider img {
+    object-position: center top;
+  }
+}
+
+
+/* Default styles for female and male providers */
+.female-provider,
+.male-provider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.female-provider img,
+.male-provider img {
+  margin-right: 0;
+}
+
+.female-provider h3,
+.male-provider h3 {
+  margin: 0;
+}
+
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 767px) {
+
+  .female-provider,
+  .male-provider {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .female-provider img,
+  .male-provider img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Adjustments for screens larger than 768px */
+@media (min-width: 768px) {
+
+  .female-provider,
+  .male-provider {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .female-provider img,
+  .male-provider img {
+    margin-right: 0;
+    margin-bottom: 0;
+    min-height: 375px;
+    object-fit: cover;
+  }
+}
+
+.providers-text {
+  max-width: 750px;
+}
+
+/* Adjustments padding-left on desktop */
+
+@media (min-width: 992px) and (max-width:1199px) {
+
+  .female-provider,
+  .male-provider {
+    padding-left: 100px;
+  }
+
+  .female-provider img,
+  .male-provider img {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .female-provider,
+  .male-provider {
+    padding-left: 60px;
+  }
+
+  .female-provider img,
+  .male-provider img {
+    margin-right: 80px;
+  }
+}
+
+/* Swiper */
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  background-image: url(../images/arrow-right-circle-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(../images/arrow-left-circle-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.office-img {
+  background: url(../svg/Simple\ Shiny.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  color: var(--light-color);
+}
+
+
+@media (max-width:767px) {
+  .swiper-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
