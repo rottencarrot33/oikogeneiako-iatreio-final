@@ -22,7 +22,15 @@
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/swiper.js"></script>
 
-    <title>Document</title>
+    <!-- Team Page Meta Tags -->
+    <title>Οι γιατροί μας - Οικογενειακό Ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου</title>
+    <meta name="description"
+        content="Γνωρίστε την ομάδα των ιατρών μας στο οικογενειακό ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου στη Θεσσαλονίκη και εμπιστευτείτε την πείρα και την επαγγελματική τους στάση για την υγεία σας." />
+    <meta property="og:title" content="Οι γιατροί μας - Οικογενειακό Ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου" />
+    <meta property="og:description"
+        content="Γνωρίστε την ομάδα των ιατρών μας στο οικογενειακό ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου στη Θεσσαλονίκη και εμπιστευτείτε την πείρα και την επαγγελματική τους στάση για την υγεία σας." />
+    <meta property="og:image" content="http://oikogeneiako-iatreio.gr/images/mother-with-kid.jpg" />
+
 </head>
 
 <body class="light">
@@ -80,11 +88,12 @@
 
 
     <div class="row" style="padding: 0;">
-        <div class="about-img col-md-6 d-flex align-items-center justify-content-center overflow-hidden"
+        <div class="slideElement about-img col-md-6 d-flex align-items-center justify-content-center overflow-hidden order-md-1 order-2 mt-0 mt-md-5"
             style="padding: 0;">
-            <img src="images/mother-with-kid.jpg" class="rounded img-fluid max-100vh" style="width: 70%; height: 70%;">
+            <img src="images/doctors-together.jpg" class="rounded img-fluid max-100vh" style="width: 70%; height: 70%;">
         </div>
-        <div class="about-text col-md-6 p-5 mt-2 d-flex flex-column justify-content-center align-items-start">
+        <div
+            class="slideElement about-text col-md-6 p-md-5 p-4 mt-2 d-flex flex-column justify-content-center align-items-start order-md-2 order-1">
             <h1 class="my-4">Λίγα λόγια <span class="fw-bold" style="color:orangered">για εμάς</span></h1>
             <h5 class="pe-lg-5 text-start custom-font-size">Ο οικογενειακός ιατρός αναλαμβάνει τη θεραπεία, την πρόληψη
                 και τη διάγνωση ασθενειών σε ολόκληρη την οικογένεια. Είναι εξειδικευμένος στη φροντίδα της υγείας των
@@ -98,7 +107,7 @@
 
     <!-- Swiper -->
 
-    <section class=" office-img" style="margin-bottom: 120px; margin-top: 100px;">
+    <section class="slideElement office-img" style="margin-bottom: 120px; margin-top: 60px;">
         <div class="text-center">
             <h1>Το ιατρείο μας</h1>
         </div>
@@ -152,7 +161,7 @@
     <!-- Docs -->
 
     <div>
-        <h1 class=" text-center my-5"><span class="fw-bold" style="color: var(--orange-color);">Οι
+        <h1 class="slideElement text-center my-5"><span class="fw-bold" style="color: var(--orange-color);">Οι
                 γιατροί</span>
             του
             ιατρείου μας</h1>
@@ -162,8 +171,8 @@
         <div class="container">
             <div class="row">
                 <div class="female-provider mb-5">
-                    <img class="rounded" src="https://i.ibb.co/9WPSdV4/female-doc.jpg" alt="">
-                    <div class="providers-text ps-2 ps-md-5 pe-2">
+                    <img class="slideElement rounded" src="https://i.ibb.co/9WPSdV4/female-doc.jpg" alt="">
+                    <div class="slideElement providers-text ps-2 ps-md-5 pe-2">
                         <h3 class="my-4">Ευαγγελία Τσίγκα</h3>
                         <p class="mb-0 custom-font-size-providers">Γεννήθηκα την 1η Απριλίου του 1979 στα
                             Τρίκαλα Θεσσαλίας. Φοίτησα στην Ιατρική Σχολή του Αριστοτελείου Πανεπιστημίου
@@ -191,8 +200,8 @@
 
 
                 <div class="male-provider">
-                    <img class="rounded" src="https://i.ibb.co/BV47n0r/male-doc.jpg" alt="">
-                    <div class="providers-text ps-2 ps-md-5 pe-2">
+                    <img class="slideElement rounded" src="https://i.ibb.co/BV47n0r/male-doc.jpg" alt="">
+                    <div class="slideElement providers-text ps-2 ps-md-5 pe-2">
                         <h3 class="my-4">Αγραφιώτης Γεώργιος</h3>
                         <p class="mb-0 custom-font-size-providers">
                             Ολοκλήρωσα τις σπουδές μου στην Ιατρική το 2001. Στη συνέχεια, εκτέλεσα τα
@@ -258,6 +267,8 @@
                             <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com"
                                 name="email" required>
                             <label class="form-inner" for="floatingInput">e-mail</label>
+                            <!-- Honeypot field -->
+                            <input type="text" name="honeypot" style="display:none">
                         </div>
                         <div class="">
                             <label class="form-inner" for="exampleFormControlTextarea1" class="form-label"></label>
@@ -267,8 +278,8 @@
                         <div class=" mt-0">
                             <label style="color:var(--light-grey)" for="recipient" class="form-label ms-2"></label>
                             <select style="color:var(--light-grey)" class="form-select" id="recipient" name="recipient">
-                                <option value="info@scubacorfu.com">Ευαγγελία Τσίγκα</option>
-                                <option value="agrafiotis.iatros@yahoo.gr">Αγραφιώτης Γεώργιος</option>
+                                <option value="evelyntsiga@gmail.com">Ευαγγελία Τσίγκα</option>
+                                <option value="agrafiotis.georgios.iatros@gmail.com">Αγραφιώτης Γεώργιος</option>
                             </select>
                         </div>
                         <button class="btn btn3 mt-3 w-100" type="submit">Αποστολή</button>

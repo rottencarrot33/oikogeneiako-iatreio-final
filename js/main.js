@@ -1,59 +1,66 @@
-  const darkButton = document.getElementById('dark');
-  const lightButton = document.getElementById('light');
-  const body = document.body;
+const darkButton = document.getElementById('dark');
+const lightButton = document.getElementById('light');
+const body = document.body;
+
+// Check localStorage for the theme preference and set it accordingly
+const theme = localStorage.getItem('theme');
+if (theme === 'dark') {
+  body.classList.add('dark');
+} else {
+  body.classList.add('light');
+}
+
+darkButton.onclick = () => {
+  body.classList.replace('light', 'dark');
+  localStorage.setItem('theme', 'dark');
+  document.querySelector('.light-mode').style.display = "none";
+  document.querySelector('.dark-mode').style.display = "block";
+};
+
+lightButton.onclick = () => {
+  body.classList.replace('dark', 'light');
+  localStorage.setItem('theme', 'light');
+  document.querySelector('.dark-mode').style.display = "none";
+  document.querySelector('.light-mode').style.display = "block";
+};
+
+// set the initial display of the images based on the active mode
+if (body.classList.contains('dark')) {
+  document.querySelector('.light-mode').style.display = "none";
+  document.querySelector('.dark-mode').style.display = "block";
+} else {
+  document.querySelector('.dark-mode').style.display = "none";
+  document.querySelector('.light-mode').style.display = "block";
+}
 
 
-  darkButton.onclick = () => {
-    body.classList.replace('light', 'dark');
-    localStorage.setItem('theme', 'dark');
-    document.querySelector('.light-mode').style.display = "none";
-    document.querySelector('.dark-mode').style.display = "block";
-  };
 
-  lightButton.onclick = () => {
-    body.classList.replace('dark', 'light');
-    localStorage.setItem('theme', 'light');
-    document.querySelector('.dark-mode').style.display = "none";
-    document.querySelector('.light-mode').style.display = "block";
-  };
+// Page Animation
 
-  // set the initial display of the images based on the active mode
-  if (body.classList.contains('dark')) {
-    document.querySelector('.light-mode').style.display = "none";
-    document.querySelector('.dark-mode').style.display = "block";
-  } else {
-    document.querySelector('.dark-mode').style.display = "none";
-    document.querySelector('.light-mode').style.display = "block";
-  }
+function reveal() {
+  let reveals = document.querySelectorAll(".slideElement");
 
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 80;
 
-
-  // Page Animation
-
-  function reveal() {
-    let reveals = document.querySelectorAll(".slideElement");
-  
-    for (let i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
-      let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 80;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
     }
   }
-  
-  // Call the reveal function on page load
-  reveal();
-  
-  // Trigger the reveal function on scroll
-  window.addEventListener("scroll", reveal);
+}
+
+// Call the reveal function on page load
+reveal();
+
+// Trigger the reveal function on scroll
+window.addEventListener("scroll", reveal);
 
 
-  // Swipper JS
+// Swipper JS
 
 var swiper = new Swiper('.swiper-container', {
   speed: 800,
@@ -89,7 +96,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// word lomit
+// word limit
 
 const reviewTexts = document.querySelectorAll('.review-text h6');
 
@@ -129,13 +136,13 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  
+
 });
 
 
 
 
-  
+
 
 
 

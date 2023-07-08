@@ -32,13 +32,15 @@ hr {
 
 @media (max-width: 767px) {
   .about-img img {
-    display: none;
+    object-fit: cover;
+    object-position: bottom !important;
+    width: 90% !important;
   }
 }
 
 @media (min-width: 768px) {
   .about-img img {
-    max-width: 400px;
+    max-width: 420px;
   }
 }
 
@@ -62,11 +64,15 @@ hr {
 }
 
 
-/* providers */
+/* Providers */
 
 @media (min-width: 768px) {
-  .providers img {
-    width: 250px;
+
+  .female-provider img,
+  .male-provider img {
+    min-width: 250px !important;
+    height: 375px !important;
+    object-fit: cover;
     float: left;
   }
 }
@@ -76,9 +82,14 @@ hr {
   .female-provider img,
   .male-provider img {
     width: 60%;
-    height: auto;
+    height: 380px !important;
+    object-fit: cover;
     margin-left: 70px;
     display: block;
+  }
+
+  .male-provider img {
+    object-position: center top;
   }
 }
 
@@ -87,9 +98,14 @@ hr {
   .female-provider img,
   .male-provider img {
     width: 80%;
-    height: auto;
+    height: 400px !important;
+    object-fit: cover;
     margin-left: 30px;
     display: block;
+  }
+
+  .male-provider img {
+    object-position: center top;
   }
 }
 
@@ -105,8 +121,6 @@ hr {
 
 .female-provider img,
 .male-provider img {
-  max-width: 100%;
-  height: auto;
   margin-right: 0;
 }
 

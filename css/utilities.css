@@ -111,6 +111,19 @@ nav {
     font-size: 1.2rem;
 }
 
+.navbar-toggler-icon {
+    background-image: url(https://i.ibb.co/Kxf1BgQ/menu-svgrepo-com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url(https://i.ibb.co/Trm7h6R/cross-svgrepo-com-2.png) !important;
+}
+
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
@@ -126,7 +139,7 @@ nav {
     }
 
     .navbar-collapse {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         border-radius: 25px;
     }
 }
