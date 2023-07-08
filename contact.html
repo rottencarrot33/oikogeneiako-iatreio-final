@@ -19,7 +19,15 @@
 	<link rel="icon" type="image/x-icon" href="/faviconlogo.ico">
 	<link rel="stylesheet" href="css/contact.css">
 	<link rel="stylesheet" href="css/utilities.css">
-	<title>Document</title>
+
+	<title>Επικοινωνήστε μαζί μας - Οικογενειακό Ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου</title>
+	<meta name="description"
+		content="Επικοινωνήστε μαζί μας στο οικογενειακό ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου στη Θεσσαλονίκη για οποιαδήποτε απορία σχετικά με την υγεία σας ή για να κλείσετε ένα ραντεβού." />
+	<meta property="og:title"
+		content="Επικοινωνήστε μαζί μας - Οικογενειακό Ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου" />
+	<meta property="og:description"
+		content="Επικοινωνήστε μαζί μας στο οικογενειακό ιατρείο Ευαγγελία Τσίγκα και Αγραφιώτη Γεώργιου στη Θεσσαλονίκη για οποιαδήποτε απορία σχετικά με την υγεία σας ή για να κλείσετε ένα ραντεβού." />
+	<meta property="og:image" content="http://oikogeneiako-iatreio.gr/images/nature.jpg" />
 </head>
 
 <body class="light">
@@ -87,13 +95,15 @@
 								<select style="color:var(--light-grey)" class="form-select" id="recipient"
 									name="recipient">
 									<option value="evelyntsiga@gmail.com">Ευαγγελία Τσίγκα</option>
-									<option value="agrafiotis.iatros@yahoo.gr">Αγραφιώτης Γεώργιος</option>
+									<option value="agrafiotis.georgios.iatros@gmail.com">Αγραφιώτης Γεώργιος</option>
 								</select>
 							</div>
 							<div class="mt-4 form-floating mb-3">
 								<input type="name" class="form-control" id="floatingInput" placeholder="Ονοματεπώνυμο"
 									name="name" required>
 								<label class="form-inner" for="floatingInput">Ονοματεπώνυμο</label>
+								<!-- Honeypot field -->
+								<input type="text" name="honeypot" style="display:none">
 							</div>
 							<div class=" mt-4 form-floating">
 								<input type="email" class="form-control" id="floatingInput"
@@ -326,6 +336,8 @@
 							<input type="email" class="form-control" id="floatingInput" placeholder="email@example.com"
 								name="email" required>
 							<label class="form-inner" for="floatingInput">e-mail</label>
+							<!-- Honeypot field -->
+							<input type="text" name="honeypot" style="display:none">
 						</div>
 						<div class="">
 							<label class="form-inner" for="exampleFormControlTextarea1" class="form-label"></label>
@@ -335,8 +347,8 @@
 						<div class=" mt-0">
 							<label style="color:var(--light-grey)" for="recipient" class="form-label ms-2"></label>
 							<select style="color:var(--light-grey)" class="form-select" id="recipient" name="recipient">
-								<option value="info@scubacorfu.com">Ευαγγελία Τσίγκα</option>
-								<option value="agrafiotis.iatros@yahoo.gr">Αγραφιώτης Γεώργιος</option>
+								<option value="evelyntsiga@gmail.com">Ευαγγελία Τσίγκα</option>
+								<option value="agrafiotis.georgios.iatros@gmail.com">Αγραφιώτης Γεώργιος</option>
 							</select>
 						</div>
 						<button class="btn btn3 mt-3 w-100" type="submit">Αποστολή</button>
